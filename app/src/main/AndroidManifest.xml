@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="m1.gic.camdoc" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application android:icon="@drawable/a" >
+
+        <!-- <activity -->
+        <!-- android:name="m1.gic.camdoc.DisplayMessageActivity" -->
+        <!-- android:label="@string/title_activity_display_message" -->
+        <!-- android:parentActivityName=".MyActivity" > -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- android:value=".MyActivity" /> -->
+        <!-- </activity> -->
+
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DisplayMessageActivity" />
+        <activity
+            android:name=".DisplayMessageRegister"
+            android:label="@string/title_activity_display_message_register"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DisplayMessageLogin"
+            android:label="DisplayMessageLogin"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DisplayAbout"
+            android:label="DisplayAbout"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ac_logout"
+            android:label="@string/title_activity_ac_logout"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>
